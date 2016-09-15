@@ -128,14 +128,17 @@ table .datebox .day {
 .datePicker{
   border: 4px solid #d3d3d3;
   padding: 0px;
+  display: flex;
 }
 
 .datePickerOption{
   text-align: center;
   padding-top: 20px;
+  width: 15%;
   padding-bottom: 20px;
   background-color: #FFFFFF;
   transition: all .3s ease;
+  margin: 0;
 }
 
 .datePickerOption .circle{
@@ -243,7 +246,7 @@ table .datebox .day {
 .datePicker--calendarButton i{
   color: #F1F1F1;
   font-size: 36px;
-  margin-top: 25px;
+  margin-top: 35px;
 }
 
 .scheduleNowButtonContainer button{
@@ -252,10 +255,8 @@ table .datebox .day {
   height: 60px;
 }
 
-.backButtonWithText{
-  font-size: 14px;
-}
-
-.backButtonWithText .material-icons{
-  color: #444444;
+.backButtonText{
+  font-size: 12px;
+  position: relative;
+  left: 25px;
 }
