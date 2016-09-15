@@ -1,10 +1,16 @@
 /* app css stylesheet */
-
+body{
+  background-color: #F1F1F1;
+}
 .menu {
   list-style: none;
   border-bottom: 0.1em solid black;
   margin-bottom: 2em;
   padding: 0 0 0.5em;
+}
+
+.md-title{
+  font-weight: 700 !important;
 }
 
 .menu:before {
@@ -39,8 +45,27 @@
   background-color:transparent !important;
 }
 
-/*dashboard*/
+.contentContainer{
+  width: 960px;
+  margin: auto;
+}
 
+/*main nav*/
+header{
+  margin-bottom: 50px;
+}
+
+.mainNavLink{
+  font-size: 16px;
+}
+
+#mainLogo{
+  height: 60px;
+  width: auto;
+  overflow: hidden;
+}
+
+/*dashboard*/
 table .datebox {
   background-color:darkslategrey;
   color:white;
@@ -53,4 +78,184 @@ table .datebox {
 
 table .datebox .day {
   font-size:34px;
+}
+
+.tableToolbar{
+  background-color: #F1F1F1 !important;
+}
+
+/*schedule*/
+.scheduler{
+  margin-top: 50px;
+}
+.tutorThumb{
+  width: 72px;
+  height: 72px;
+  background-color: #444444;
+}
+
+.scheduler h6{
+  font-weight: 700;
+}
+
+.circle{
+  width: 13px;
+  height: 13px;
+  border-radius: 100px;
+  display: inline-block;
+}
+
+.circle--available{
+  background-color: #53DD6C;
+}
+
+.circle--unavailable{
+  background-color: red;
+}
+
+.circle--outline{
+  border: 2px solid #53DD6C;
+  transition: all .3s ease;
+  background-color: #FFFFFF;
+  width: 30px;
+  height: 30px;
+}
+
+.timePickerOption:hover .circle--outline{
+  background-color: #53DD6C;
+}
+
+.datePicker{
+  border: 4px solid #d3d3d3;
+  padding: 0px;
+}
+
+.datePickerOption{
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #FFFFFF;
+  transition: all .3s ease;
+}
+
+.datePickerOption .circle{
+  width: 30px;
+  height: 30px;
+}
+
+.datePicker--day{
+  display: block;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.datePicker--number{
+  display: block;
+  font-weight: 700;
+  font-size: 36px;
+  margin-top: s0px;
+}
+
+.timePicker--time{
+  display: block;
+  font-weight: 700;
+  font-size: 36px;
+  margin-top: 10px;
+}
+
+.timePicker--ampm{
+  display: block;
+  font-weight: 700;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.datePicker .mdl-cell{
+  width: 14.2%;
+  margin: 0px;
+}
+
+.datePickerOption--active{
+  background-color: #F1F1F1;
+}
+
+.datePickerOption:hover{
+  background-color: #F1F1F1;
+  cursor: pointer;
+}
+
+.timePicker{
+  display: none;
+  opacity: 0;
+  margin-top: 20px;
+  border: 4px solid #d3d3d3;
+  padding: 0px;
+  transition: all .5s ease;
+}
+
+.timePickerOption{
+  text-align: center;
+  padding-top: 20px;
+  width: 20%;
+  padding-bottom: 20px;
+  background-color: #FFFFFF;
+  transition: all .3s ease;
+  margin: 0;
+}
+
+.timeActive{
+  opacity: 1;
+}
+
+.timePickerOption:hover{
+  background-color: #F1F1F1;
+  cursor: pointer;
+}
+
+.timePickerOption--active{
+  background-color: #F1F1F1;
+}
+
+.timePickerOption--active .circle--outline{
+  background-color: #53DD6C;
+}
+
+
+.scheduleNowButtonContainer{
+  opacity: 0;
+  transition: all .3s ease;
+}
+
+.scheduleNowButtonContainer--active{
+  opacity: 1;
+}
+
+.datePicker--calendarButton{
+  position: relative;
+  left: -1px;
+  background-color: #63A088;
+}
+
+.datePicker--calendarButton:hover{
+  background-color: #006964;
+}
+
+.datePicker--calendarButton i{
+  color: #F1F1F1;
+  font-size: 36px;
+  margin-top: 25px;
+}
+
+.scheduleNowButtonContainer button{
+  width: 100%;
+  margin-top: 20px;
+  height: 60px;
+}
+
+.backButtonWithText{
+  font-size: 14px;
+}
+
+.backButtonWithText .material-icons{
+  color: #444444;
 }

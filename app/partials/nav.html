@@ -1,0 +1,34 @@
+<md-content>
+    <md-toolbar class="md-hue-2">
+        <div class="md-toolbar-tools">
+            <a ng-href="#!/dsahboard">
+                <img src="images/Peach_Logo2.png" id="mainLogo"/>
+            </a>
+            <span flex></span>
+            <nav>
+                <md-button ng-href="#!/dsahboard">Dashboard</md-button>
+                <md-button ng-href="#!/schedule">Find a Tutor</md-button>
+                <md-button ng-href="{{googleUrl}}">Tutor Others</md-button>
+                <md-button ng-href="{{googleUrl}}">Record</md-button>
+                <md-button ng-href="{{googleUrl}}">History</md-button>
+            </nav>
+            <md-menu md-offset="0 -7 " md-position-mode="target-right bottom">
+                <md-button class="md-icon-button" aria-label="Settings" ng-click="$mdOpenMenu($event)">
+                    <md-icon class="material-icons">settings</md-icon>
+                </md-button>
+                <md-menu-content width="4">
+                    <md-menu-item>
+                        <md-button ng-click="">
+                            <span md-menu-align-target>Settings</span>
+                        </md-button>
+                    </md-menu-item>
+                    <md-menu-item>
+                        <md-button ng-click="">
+                            <span md-menu-align-target>Log Out</span>
+                        </md-button>
+                    </md-menu-item>
+                </md-menu-content>
+            </md-menu>
+        </div>
+    </md-toolbar>
+</md-content>
