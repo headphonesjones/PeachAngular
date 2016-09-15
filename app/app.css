@@ -29,3 +29,28 @@
   padding: 0;
 }
 
+/*reuse*/
+
+.margin0 {
+  margin:0;
+}
+
+.transparent {
+  background-color:transparent !important;
+}
+
+/*dashboard*/
+
+table .datebox {
+  background-color:darkslategrey;
+  color:white;
+  text-align:center;
+  text-transform:uppercase;
+  font-weight:700;
+  line-height:24px;
+  max-width: 80px;
+}
+
+table .datebox .day {
+  font-size:34px;
+}
