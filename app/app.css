@@ -260,3 +260,20 @@ table .datebox .day {
   position: relative;
   left: 25px;
 }
+
+md-input-container.time {
+  margin-left:14px;
+}
+
+.availability-form {
+  border-bottom: solid 1px rgba(0,0,0,0.12);
+  background: rgb(250,250,250);
+}
+
+.availability-form .add-time-button {
+  margin:0 0 0 14px !important;
+}
+
+.availability-form md-icon {
+  color:rgba(0,0,0,.54);
+}

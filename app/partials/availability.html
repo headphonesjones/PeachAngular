@@ -7,11 +7,29 @@
         </div>
     </md-toolbar>
     <md-card class="margin0">
-        <md-toolbar class="md-table-toolbar md-default">
-            <div class="md-toolbar-tools">
-                <span>Your Availability</span>
-            </div>
-        </md-toolbar>
+        <div layout="column" ng-cloak class="md-inline-form availability-form">
+            <form name="md-primary">
+                <div layout="row">
+                    <md-input-container>
+                        <label>Enter date</label>
+                        <md-datepicker ng-model="user.submissionDate"></md-datepicker>
+                    </md-input-container>
+                    <md-input-container class="md-icon-float md-block time">
+                        <label>Enter start time</label>
+                        <md-icon>access_time</md-icon>
+                        <input class="md-datepicker-input md-input" type="time" ng-model="startTime">
+                    </md-input-container>
+                    <md-input-container class="md-icon-float md-block time">
+                        <label>Enter end time</label>
+                        <md-icon>access_time</md-icon>
+                        <input class="md-datepicker-input md-input" type="time" ng-model="endTime">
+                    </md-input-container>
+                    <md-input-container>
+                        <md-button class=" md-primary md-button md-ink-ripple add-time-button">Add to Your Availability</md-button>
+                    </md-input-container>
+                </div>
+            </form>
+        </div>
         <md-table-container>
             <table md-table>
                 <thead md-head>
@@ -19,7 +37,7 @@
                     <th md-column md-order-by="dateToLower">Date</th>
                     <th md-column>Time</th>
                     <th md-column>Duration</th>
-                    <th md-column>Cancel</th>
+                    <th md-column>Actions</th>
                 </tr>
                 </thead>
                 <tbody md-body>
@@ -28,7 +46,7 @@
                     <td md-cell>3:30PM</td>
                     <td md-cell>1 Hour</td>
                     <td md-cell>
-                        <md-button class="md-raised md-primary md-button md-ink-ripple">Cancel Availability</md-button>
+                        <md-button class="md-raised md-warn md-button md-ink-ripple">Cancel</md-button>
                     </td>
                 </tr>
                 </tbody>

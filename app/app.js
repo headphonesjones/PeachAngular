@@ -9,7 +9,8 @@ angular.module('myApp', [
   'myApp.availability',
   'myApp.version',
   'ngMaterial',
-  'md.data.table'
+  'md.data.table',
+  'ngMaterialDatePicker'
 ]).
 config(['$locationProvider', '$routeProvider', function($locationProvider, $routeProvider) {
   $locationProvider.html5Mode({
