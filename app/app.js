@@ -6,6 +6,7 @@ angular.module('myApp', [
   'myApp.dashboard',
   'myApp.schedule',
   'myApp.scheduleDetail',
+  'myApp.availability',
   'myApp.version',
   'ngMaterial',
   'md.data.table'
