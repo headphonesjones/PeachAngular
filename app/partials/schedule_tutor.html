@@ -1,14 +1,19 @@
 <md-toolbar class="md-table-toolbar md-default transparent tableToolbar">
-    <a  href="/schedule" class="backButtonText">Back to list</a>
     <div class="md-toolbar-tools">
         <div class="md-title">
-            Jeff Kellian
+            Schedule Session with Jeff Kellian
         </div>
         <div flex="" class="flex"></div>
-        <h6>Select a Date:&nbsp;&nbsp;&nbsp;&nbsp;<div class="circle circle--available"></div>&nbsp;Available&nbsp;&nbsp;&nbsp;&nbsp;<div class="circle circle--unavailable"></div>&nbsp;Unavailable</h6></md-subheader>
+        <a ng-href="/find-tutor">
+            <md-button class="md-raised md-default md-button md-ink-ripple">Go Back</md-button>
+        </a>
     </div>
 </md-toolbar>
 <div class="scheduler">
+    <md-subheader class="md-primary">
+        <div class="circle circle--available"></div>Available
+        <div class="circle circle--unavailable"></div>Unavailable</div>
+    </md-subheader>
     <div class="datePicker content-grid" layout="row">
         <div class="datePickerOption" flex>
             <div class="circle circle--available"></div>

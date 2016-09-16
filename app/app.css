@@ -50,6 +50,10 @@ body{
   margin: auto;
 }
 
+.white {
+  color:white !important;
+}
+
 /*main nav*/
 header{
   margin-bottom: 50px;
@@ -84,10 +88,7 @@ table .datebox .day {
   background-color: #F1F1F1 !important;
 }
 
-/*schedule*/
-.scheduler{
-  margin-top: 50px;
-}
+/*schedule a tutor*/
 .tutorThumb{
   width: 72px;
   height: 72px;
@@ -111,6 +112,14 @@ table .datebox .day {
 
 .circle--unavailable{
   background-color: red;
+}
+
+.md-subheader-content .circle {
+  margin-right:14px;
+}
+
+.md-subheader-content .circle--unavailable {
+  margin-left:14px;
 }
 
 .circle--outline{
@@ -255,12 +264,7 @@ table .datebox .day {
   height: 60px;
 }
 
-.backButtonText{
-  font-size: 12px;
-  position: relative;
-  left: 25px;
-}
-
+/*availability*/
 md-input-container.time {
   margin-left:14px;
 }
@@ -277,3 +281,8 @@ md-input-container.time {
 .availability-form md-icon {
   color:rgba(0,0,0,.54);
 }
+
+/*Add card shadows on cards with margin0 class*/
+/*md-content {*/
+  /*overflow:visible;*/
+/*}*/

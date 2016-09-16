@@ -4,9 +4,10 @@
 angular.module('myApp', [
   'ngRoute',
   'myApp.dashboard',
-  'myApp.schedule',
-  'myApp.scheduleDetail',
+  'myApp.findTutor',
+  'myApp.scheduleTutor',
   'myApp.availability',
+  'myApp.tutorOthers',
   'myApp.version',
   'ngMaterial',
   'md.data.table'
@@ -21,17 +22,21 @@ config(['$locationProvider', '$routeProvider', function($locationProvider, $rout
         templateUrl: 'partials/dashboard.html',
         controller: 'DashCtrl'
       })
-      .when('/schedule', {
-        templateUrl: '/partials/schedule.html',
+      .when('/find-tutor', {
+        templateUrl: '/partials/find_tutor.html',
         controller:  'SchedCtrl'
       })
       .when('/schedule-tutor', {
-        templateUrl: '/partials/schedule_detail.html',
+        templateUrl: '/partials/schedule_tutor.html',
         controller:  'SchedCtrl'
       })
       .when('/availability', {
         templateUrl: '/partials/availability.html',
         controller:  'AvailCtrl'
+      })
+      .when('/tutor-others', {
+          templateUrl: '/partials/tutor_others.html',
+          controller:  'TutCtrl'
       })
       .when('/record', {
         templateUrl: '/partials/record.html',
@@ -65,11 +70,11 @@ angular.module('menuDemoWidth', ['ngMaterial']).config(function($mdIconProvider)
       .iconSet("social", 'img/icons/sets/social-icons.svg', 24);
 });
 
-angular.module('myApp.schedule', ['ngRoute']).controller('SchedCtrl', [function() {
+angular.module('myApp.findTutor', ['ngRoute']).controller('FindCtrl', [function() {
 
 }]);
 
-angular.module('myApp.scheduleDetail', ['ngRoute']).controller('SchedCtrl', [function($scope) {
+angular.module('myApp.scheduleTutor', ['ngRoute']).controller('SchedCtrl', [function($scope) {
 
 }]);
 
@@ -78,6 +83,10 @@ angular.module('myApp.dashboard', ['ngRoute']).controller('DashCtrl', [function(
 }]);
 
 angular.module('myApp.availability', ['ngRoute']).controller('AvailCtrl', [function() {
+
+}]);
+
+angular.module('myApp.tutorOthers', ['ngRoute']).controller('TutCtrl', [function() {
 
 }]);
 
